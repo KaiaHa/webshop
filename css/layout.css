@@ -1,94 +1,107 @@
-.warning-color {color: #fb0000}
-.background-wallpaper {
-  background-image: url(http://www.kinyu-z.net/data/wallpapers/125/1142737.jpg)
+
+.body{
+  margin: 0px;
 }
-.box {
-    display: flex;
-    justify-content: space-between;
-  }
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: rgb(0, 0, 0);
-  }
-  
-  .flex-containt {
-    background-colo: #7a4747;
-    margin: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
-  .flex-item {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background-color: rgb(8, 86, 255);
-  }
-  .flex-itme {
-    background-color: #fbff00;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-  }
-  .flex-container-space {
-    background-color: #7a4747;
-    margin: 10px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    line-height: 75px;
-    font-size: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .flex-justify-test{
-    justify-content: center;
-  }
-  .thumbnail-grid figure.i2 {
-    background: url('https://www.netflix.com/watch/70208599?trackId=13752289&tctx=0%2C3%2C93ee49ca3e02e680028e9ef4485065b579eb1102%3A9796d426c5ac3fe725098629246fd2a43a31078e') no-repeat center;
-  }
-  .grow { transition: all .1s ease-out; }
-.grow:hover { transform: scale(1.2); }
-#library {
-  background-image: url('https://upload.wikimedia.org/wikipedia/pt/thumb/4/46/Deadpool_2.jpg/250px-Deadpool_2.jpg');
-width: 250px;
-height: 400px;
-transition: ease-in 0.3s;
+.header {
+  grid-area: header;
 }
-#library:hover {
-  background-image: url('https://superheroscifi.files.wordpress.com/2015/04/deadpool_logo.jpg');
-  image-orientation: unset;
-  background-image: cross-fade('http://www.welcheskatzenklo.de/wp-content/uploads/2016/10/video512x512.png');
-  opacity: 1;
-  transition: ease-in 0.5s;
+.main {
+  grid-area: main;
+  grid-row: 
 }
-  #library-1 {
-    background-image: url('https://2.bp.blogspot.com/-_UsXtO3x4Yw/WM4f25BkBkI/AAAAAAAAhvE/Xz_idbARd1k7CduDyAdX2NdUmrsUf6fUQCLcB/s1600/Kong-Skull-Island-Box-Office-2.jpg');
-  width: 250px;
-  height: 400px;
-  transition: ease-in 0.3s;
-  }
-  #library-1:hover {
-    background-image: url('http://cinemania.elmundo.es/wp-content/uploads/2014/07/21.jpg');
-    image-orientation: unset;
-    background-image: cross-fade('http://www.welcheskatzenklo.de/wp-content/uploads/2016/10/video512x512.png');
-    opacity: 1;
-    transition: ease-in 0.5s;
+.sidebar {
+  grid-area: sidebar;
+
 }
-img {
-  opacity: .1;
-  position: absolute;
-  position: relative;
-  left: 0px;
-  top: 150px;
-  z-index: -2;
-  width: 100px;
-  height: 100px;
-  Transition: 0.5s;
+.footer {
+  grid-area: footer;
 }
-img:hover {
-  opacity: 1;
+.main2{
+  grid-row: 3;
+  grid-column: 3 / 2;
+}
+.main3{
+  grid-row: 4;
+  grid-column: 5 / 
+}
+.main4{
+  grid-row: 5;
+  grid-column: 2 / 4;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 20vh 20vh 20vh;
+  grid-template-rows: 20vh 20vh 20vh;
+  grid-template-areas:
+  "sidebar header header header"
+  "sidebar main main main"
+  "sidebar main main main";
+  justify-items: fill;
+}
+
+.viewport{
+height: 97vh;
+width: 98vw;
+}
+.class{
+  display: grid;
+}
+.layout{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 5% 1fr 1fr 1%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.layout2{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 60% 1fr;
+  grid-template-columns: 50% 1fr 1fr;
+}
+.blue{
+  background-color: blue;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+.top{
+grid-row: 1/2;
+grid-column: 1/5;
+}
+.middle{
+grid-row: 2/3;
+grid-column: 1/5;
+}
+.bottom{
+  grid-row: 3/5;
+  grid-column: 1/5;
+}
+.center-item{
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.fugly{
+  grid-row: 2/4;
+  grid-column: 2/4;
+}
+.fugly-2{
+  grid-row: 3/4;
+  grid-column: 2/4;
+}
+.fugly-3{
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+.fugly-4{
+  grid-row: 4/3;
+  grid-column: 3/4;
 }
