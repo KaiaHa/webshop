@@ -37,3 +37,30 @@
 .inactive - grå
 .inactive light
 .inactive dark
+
+.box-150-px{
+    height: 150px;
+    width: 150px;
+    border: solid 1px black;
+    text-align: center;
+    margin: 25px;
+}
+.box-50-px{
+    height: 50px;
+    width: 50px;
+    border: solid 2px rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px;
+}
+.margin-25{
+    margin: 25px 25px 10px 25px;
+}
+.navbar{
+    background-color: rgb(7, 63, 65);
+    color: black;
+    border: solid 1px;
+    border-radius: 50px;
+    font-size: 25px;
+    justify-content: center;
+    display: flex;
+}
