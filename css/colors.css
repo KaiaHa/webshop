@@ -61,3 +61,19 @@
 .inactive
 .inactive-light
 .inactive-dark
+
+.blue{
+    background-color: blue;
+  }
+  .red{
+    background-color: red;
+  }
+  .green{
+    background-color: green;
+  }
+  .yellow{
+    background-color: yellow;
+  }
+  .realblue{
+      background-color: rebeccapurple;
+  }
