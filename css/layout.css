@@ -7,7 +7,6 @@
 }
 .main {
   grid-area: main;
-  grid-row: 
 }
 .sidebar {
   grid-area: sidebar;
@@ -22,7 +21,7 @@
 }
 .main3{
   grid-row: 4;
-  grid-column: 5 / 
+  grid-column: 5 / 5
 }
 .main4{
   grid-row: 5;
@@ -37,7 +36,6 @@
   "sidebar header header header"
   "sidebar main main main"
   "sidebar main main main";
-  justify-items: fill;
 }
 
 .viewport{
