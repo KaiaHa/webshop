@@ -36,7 +36,7 @@ text-align: center;
   grid-row: 13/16;
   grid-column: 1/14;
   width: 100%;
-  position: fixed;
+  position:fixed;
   bottom: 0px;
   
 }
@@ -61,7 +61,7 @@ width: 98vw;
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 5%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .layout-background{
@@ -84,7 +84,7 @@ width: 98vw;
   color:red;
 }
 .background-wallpaper {
-  background-image: url(https://media3.giphy.com/media/3oKIP657aH5QRMkX3q/giphy.gif);
+  background-image: url(https://media0.giphy.com/media/26DOMIeH5yZgc4GD6/giphy.gif);
   background-size: 100%;
   background-position-x:;
   background-position-y: 50%;
