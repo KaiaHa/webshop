@@ -12,7 +12,7 @@
   grid-area: sidebar;
 
 }
-.footer {
+.footers {
   grid-area: footer;
 }
 .main2{
@@ -33,8 +33,12 @@ grid-column: 4/11;
 text-align: center;
 }
 .footer{
-  grid-row: 12/13;
-  grid-column: 1/14
+  grid-row: 13/16;
+  grid-column: 1/14;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  
 }
 .container{
   display: grid;
@@ -78,4 +82,10 @@ width: 98vw;
   grid-row: 2/3;
   grid-column: 1/4;
   color:red;
+}
+.background-wallpaper {
+  background-image: url(https://media3.giphy.com/media/3oKIP657aH5QRMkX3q/giphy.gif);
+  background-size: 100%;
+  background-position-x:;
+  background-position-y: 50%;
 }
