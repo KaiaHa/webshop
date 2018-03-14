@@ -87,10 +87,8 @@ width: 98vw;
 .background-wallpaper {
   background-image: url(https://media0.giphy.com/media/26DOMIeH5yZgc4GD6/giphy.gif);
   background-size: 100%;
-  background-position-x:;
   background-position-y: 50%;
 }
 .login-margin{
   margin: 25px 25px 10px 20px;
-  height: 50%;
 }

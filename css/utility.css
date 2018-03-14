@@ -19,20 +19,34 @@
 }
 p {
     text-align:center;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-name: slideIn;
-    animation-iteration-count: Infinite;
+    animation-iteration-count: inherit;
+    animation-fill-mode: inherit;
   }
   
   @keyframes slideIn {
     from {
-      margin-left: -50%;
+      margin-left: 50%;
       width: 100%; 
     }
     
     to {
-      margin-left: 50%;
+      margin-left: 0%;
       width: 100%;
     }
   }
-  
+  .flex-images{
+      margin: 0 5px;
+      text-align:center;
+      image-rendering: 25%;
+      min-width: 0;
+      max-width: 100%;
+      height: auto;
+      display:flex;
+      flex-wrap:nowrap;
+      flex-direction: row;
+  }
+  .imagess{
+    border-radius: 50%;
+  }
