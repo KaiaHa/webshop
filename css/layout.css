@@ -38,6 +38,7 @@ text-align: center;
   width: 100%;
   position:fixed;
   bottom: 0px;
+  text-align: center;
   
 }
 .container{
@@ -88,4 +89,8 @@ width: 98vw;
   background-size: 100%;
   background-position-x:;
   background-position-y: 50%;
+}
+.login-margin{
+  margin: 25px 25px 10px 20px;
+  height: 50%;
 }
