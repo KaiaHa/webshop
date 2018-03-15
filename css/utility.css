@@ -2,7 +2,7 @@
 .body{
     margin: 0px;
 }
-.box{
+.box-1{
     border: solid 2px black;
 }
 .img{
@@ -46,7 +46,6 @@ p {
       display:flex;
       flex-wrap:nowrap;
       flex-direction: row;
-      border: solid 1px black
   }
   .imagess{
     border-radius: 50%;
