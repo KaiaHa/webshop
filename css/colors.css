@@ -17,7 +17,9 @@
 .secondary-dark{
     color: yellowgreen;
 }
-
+.gradient-background{
+    background: linear-gradient(red, lavender)
+}
 .accent
 .accent-light
 .accent-dark

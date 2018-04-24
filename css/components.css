@@ -7,30 +7,53 @@
     font-size: 200%;
     flex-direction: row;
 }
+.flex-container-alt {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #ececec;
+    justify-content: space-around;
+    height: -webkit-fill-available;
+    flex-direction: column;
+  }
 .flex-container-grid{
     grid-row: 1/13;
     grid-column: 3/13;
 }
+.box-150-px{
+    height: 150px;
+    width: 250px;
+    border: solid 1px black;
+    margin-top: 25px;
+  }
 .flex-box{
     height:5%;
     width:80%;
     border: solid 1px;
     text-align: center;
     margin: 5%;
-    padding: 5%;
     position: center;
     justify-content: top;
     z-index: 2;
+    position: relative;
+    flex-direction: row;
 }
-
+.user-grid{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 25%, 1fr, 1fr, 1fr;
+    grid-template-columns: 25%, 1fr, 1fr, 1fr;
+}
+.left{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
 .flex-box-about{
     height:100px;
-    width:80%;
+    width:25%;
     border: solid 1px;
-    text-align: center;
-    margin: 5%;
+    text-align: left;
     padding: 5%;
-    position: center;
+    position: left;
     justify-content: top;
 }
 .flex-box-bottom{
@@ -42,6 +65,10 @@
     padding: 5%;
     position: bottom;
     justify-content: bottom;
+}
+.margin-no-sidebars{
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .flex-wrapper{
     display: flex;
@@ -68,17 +95,17 @@ h1 {
 }
 .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 15px 0px 50px;
-    justify-content: center;
     font-size:150%;
 }
 .navbar-1{
-    background-color: rgb(7, 63, 65);
+    background-color: red;
     color: black;
     border: solid 1px;
     justify-content: center;
     height: 5%;
+    text-align: center;
 }
 .margin-25{
     margin: 25% 100px 100px 100px;
@@ -113,6 +140,12 @@ h1 {
 .text-size{
     font-size: 25px;
 }
+.flex-side{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 .flex-sidebar{
     border:solid 1px black;
     margin:0%;
@@ -128,3 +161,51 @@ h1 {
     position: fixed;
     z-index: 1;
     overflow:auto}
+    .vu-tabs {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .vu-tabs label {
+        order: 1;
+        display: block;
+        padding: 1rem 2rem;
+        margin-right: 0.2rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background ease 0.2s;
+      }
+      
+      .vu-tabs .vu-tab {
+        order: 99;
+        flex-grow: 1;
+        width: 100%;
+        display: none;
+        padding: 1rem;
+      }
+      
+      .vu-tabs input[type="radio"] {
+        display: none;
+      }
+      
+      .vu-tabs input[type="radio"]:checked + label {
+          border-bottom:solid .2em blue;
+      }
+      
+      .vu-tabs input[type="radio"]:checked + label + .vu-tab {
+        display: block;
+      }
+      
+      @media (max-width: 45em) {
+        .vu-tabs .tab,
+        .vu-tabs label {
+          order: initial;
+        }
+      
+        .vu-tabs label {
+          width: 100%;
+          margin-right: 0;
+          margin-top: 0.2rem;
+        }
+      }
+      
